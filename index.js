@@ -1,6 +1,8 @@
+
 import express from "express"
 import { PORT } from "./src/config/config.js"
 import { apiRouter } from "./src/router/api/api.router.js";
+
 
 const app = express()
 
@@ -13,9 +15,6 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Example app listening on port ${PORT}`)
+  console.log(`Server up on port ${PORT}`)
 })
-
-
-
 
